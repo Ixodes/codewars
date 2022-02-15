@@ -1,14 +1,9 @@
 package by.ixodes.codewars.katas.kyu6;
 
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
-import static junit.framework.TestCase.*;
-
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TwoSumTest {
 
@@ -19,6 +14,7 @@ public class TwoSumTest {
         doTest(new int[]{1234,5678,9012}, new int[]{1,2});
         doTest(new int[]{2,2,3},          new int[]{0,1});
     }
+
     private void doTest(int[] numbers, int[] expected)
     {
         int target = numbers[expected[0]] + numbers[expected[1]];

@@ -1,7 +1,9 @@
 package by.ixodes.codewars.katas.kyu5;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 /**
  * @autor ixodes
@@ -25,7 +27,7 @@ public class SquareMatrixUtilsTest {
                 {11, 8}};
 
         int[][] actual = SquareMatrixUtils.matrixMultiplication(a, b);
-        Assert.assertArrayEquals(expected, actual);
+        assertArrayEquals(expected, actual);
     }
 
     @Test
@@ -45,7 +47,7 @@ public class SquareMatrixUtilsTest {
                     { 4, 12 }};
 
             int[][] actual = SquareMatrixUtils.matrixMultiplication(a, b);
-            Assert.assertArrayEquals(expected, actual);
+            assertArrayEquals(expected, actual);
         }
 
         {
@@ -66,7 +68,7 @@ public class SquareMatrixUtilsTest {
                     { 26, 33, 31 }};
 
             int[][] actual = SquareMatrixUtils.matrixMultiplication(a, b);
-            Assert.assertArrayEquals(expected, actual);
+            assertArrayEquals(expected, actual);
         }
     }
 }
